@@ -1,0 +1,2 @@
+post_body: {  "name":"Sparkle Angel", "age":2, "colour":"blue" }
+update_body: {"name":"Star Angel", "age":4, "colour":"yellow"}
