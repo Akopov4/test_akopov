@@ -9,7 +9,7 @@ from tests.ui_tests import TestBase
 
 class TestLogin(TestBase):
 
-    @pytest.mark.parametrize('email,password', [('sadsad@dsas.com', 'asdsadada')])
+    @pytest.mark.parametrize('email,password', [(EMAIL,PASSWORD),('erwrwer', 'asdsadada')])
     def test_log_in(self, log_in_fixture, email, password):
 
         if email == EMAIL and password == PASSWORD:
