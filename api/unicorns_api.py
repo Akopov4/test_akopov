@@ -18,11 +18,6 @@ class UnicornsAPI(BaseRequest):
         return requests.post(url=url, data=payload, headers=self.headers)
 
     @allure.step('Get Unicorn')
-    def get_unicorns(self):
-        url= self.base_url + 'unicorns'
-        return requests.get(url)
-
-    @allure.step('Get Unicorn')
     def get_unicorn(self, unicorn_id:int):
         url = self.base_url +f'unicorns/{unicorn_id}'
         return requests.get(url)
